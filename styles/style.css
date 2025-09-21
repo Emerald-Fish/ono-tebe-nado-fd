@@ -30,20 +30,11 @@
     list-style: circle;
 }
 
-/*
-.header__link_active {
-    
-}
-*/
-
 .header__link {
     border-bottom: 1px solid #000;
-    text-decoration: none;
-}
-
-.header__link-text {
     font-size: 18px;
-    line-height: 1.1667;
+    line-height: 1.167;
+    /*text-decoration: underline solid #000 1px;*/
 }
 
 .header__logo {
@@ -66,9 +57,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.35;
 }
 
 .header__address {
@@ -76,6 +64,13 @@
     justify-self: end;
     margin-top: 95px;
     margin-bottom: 100px;
+}
+
+.address-block__item {
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.35;
+    text-decoration: none;
 }
 
 .header__adress-location {
@@ -88,10 +83,11 @@
 
 .cover {
     position: relative;
-    min-height: 50px;
+    height: 757px;
     padding: 165px 50px 50px 50px;
     background-image: url(../images/cover.jpg);
-    background-repeat:no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     z-index: 0;
 }
@@ -101,8 +97,7 @@
     opacity: 60%;
     z-index: -1;
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0; 
     width: 100%;
     height: 100%;
 }
@@ -174,7 +169,6 @@
 .lots {
     margin: 180px 24px 0px 24px;
     padding: 0px;
-    min-height: 50px;
 }
 
 .lots__heading {
@@ -209,7 +203,7 @@
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 596px;
+    min-height: 596px;
     width: 334px;
     position: relative;
     background-repeat:no-repeat;
@@ -322,11 +316,11 @@
 
 
 .footer {
-    height: 180px;
     display: grid;
     grid-template-columns: 1fr 163.9px 1fr;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 81px;
 }
 
 .footer__adress-location {
@@ -351,24 +345,17 @@
     justify-content: center;
 }
 
-/*
-.footer__menu-link_active {
-    text-decoration: none;
-}
-*/
-
 .footer__menu-link {
     border-bottom: 1px solid #000;
     text-decoration: none;
-}
-
-.footer__menu-link-text {
     font-weight: normal;
     font-size: 18px;
     line-height: 1.167;
     text-align: center;
+}
 
-
+.link_active {
+    border-bottom: 0px;
 }
 
 .footer__social-list {
